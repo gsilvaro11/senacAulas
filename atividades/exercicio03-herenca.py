@@ -21,7 +21,7 @@ class Aluno:
         print(f'\nCodigo: {self.codigo}\nNome: {self.nome}\nMatricula: {self.matricula}')
 
 
-class aluEnsinoMedio(Aluno):
+class AlunoEnsinoMedio(Aluno):
     def __init__(self, codigo, nome, matricula, ano) -> None:
         super().__init__(codigo, nome, matricula)
         self.ano = ano
@@ -43,7 +43,7 @@ class AlunoGraduacao(Aluno):
 
 #Instâncias
 aluno = Aluno(1,'Guilherme',2021001)
-aluno2 = aluEnsinoMedio(2, 'Laura', 2021002, 2021)
+aluno2 = AlunoEnsinoMedio(2, 'Laura', 2021002, 2021)
 aluno3 = AlunoGraduacao(3, 'Nei', 2021003, 4)
 
 #Main
